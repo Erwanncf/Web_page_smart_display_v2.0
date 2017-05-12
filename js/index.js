@@ -26,12 +26,6 @@ var timeOut = 0;
 var EtatDisplay = "Connecté";
 var clb;
 
-// var msg = document.getElementById('msg');
-
-  
-
-   
-
 	(function(w, d, s, id, n)
 			{
 				
@@ -276,7 +270,7 @@ function loadDoc()
 	{
 		text += x.elements[i].value;
 	}
-	alert(text);
+	
 					
 					 
 	var xhttp = new XMLHttpRequest();
