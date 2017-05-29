@@ -1,0 +1,71 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+    <head>
+        <title>Sensors display</title>
+		 <link rel="stylesheet" href="css/style.css">	
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="js/index.js"></script>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<audio id="xyz" src="Short-ringtone-for-notification.mp3" preload="auto"></audio>
+		
+   </head>
+    <body>    
+       
+				<div id="titre">
+				<IMG src="https://c.orange.fr/logo-orange.png" alt="Logo Orange"WIDTH="70" HEIGHT="70"ALIGN="left" VSPACE="0" HSPACE="5">
+				<h1>Smart display</h1></div>
+				
+				<BODY onLoad="RefreshIMG()">
+				<BODY onload="getSensors()">
+				
+				<img src="smart_display.jpg" alt="smart_display_img" ALIGN="left" border="3" VSPACE="0" HSPACE="0" style="width:400px;height:350px;">
+				<br>Verssion 10<br />
+				<br>Éditeur: <em>Erwann Caroff</em><br />
+				<br>Lieux de mesure: Salle de créativité<br />
+				<br><label>Date de publication: <body onload="displayMyVar('target');"> <span id="demo"/></label><br/>
+				<br><label>Laissez un message sur le Smart display en vous connectant sur: <body onload="displayMyVar('target');"> <span id="target13"/></label><br />
+				<br><label>Puis cliquez sur le lien Ip: <body onload="displayMyVar('target');"> <span id="target8"/></label>  <a href="" id="target12" target="_blank">Lien Smart display</a><br />
+				<br><label>Etat display: <body onload="displayMyVar('target');"> <span id="target11"/></label><br />	
+				<br><label>Information de fonctionement: <body onload="displayMyVar('target');"> <span id="target16"/></label><br />			
+				<br><label>Actualisation dans: <span id="heure"/></label> sec<br />
+				<form  id="wonderpush-subscription-switch" data-sentence="Recevoir nos dernières news par push web : " data-on="OUI" data-off="NON"></form> 
+				
+				<div id="titre"> <h2>Message display</h2></div>
+	
+				<form id="frm1">Entrez un message: <input type="text" size=200 name="fna525me" value=""></form> 
+				<button onclick="loadDoc()">Envoyer</button>
+				
+				<div id="titre"> <h2>Données captées</h2></div>
+				
+				<li><label>Température: <body onload="displayMyVar('target');"> <span id="target1"/></label> °C </li> 
+				<li><label>Humidité: <body onload="displayMyVar('target');"> <span id="target2"/></label> % </li> 
+				<li><label>Pression atmosphérique: <body onload="displayMyVar('target');"> <span id="target3"/></label> hPa</li> 
+				<li><label>Bruit: <body onload="displayMyVar('target');"> <span id="target5"/></label> % </li> 
+				<li><label>Température cafetière: <body onload="displayMyVar('target');"> <span id="target6"/></label> °C </li> 
+				<li><label>Message affiché: <body onload="displayMyVar('target');"> <span id="target7"/></label></li> 
+				<li><label>RSSI: <body onload="displayMyVar('target');"> <span id="target14"/></label>dB</li> 
+
+				<div id="titre"><h2>Activité (Alerte sonore pour la pause)</h2></div>
+				
+				<li><label>État cafetière: <body onload="displayMyVar('target');"> <span id="target9"/></label></li> 
+				<li><label>La Salle est:  <body onload="displayMyVar('target');"> <span id="target10"/></label></li> 
+				<img id="img" width="129"/>
+			
+				<div id="titre"><h2>Actualité</h2></div>
+				
+				<li><label>Source Actus: <body onload="displayMyVar('target');"> <span id="target15"/></label></li>
+				<ul class="rssData"></ul>
+
+				<div id="titre"><h2>Météo</h2></div>
+				
+				<iframe src="https://www.meteoblue.com/en/weather/widget/three/lannion_france_3007609?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups" style="width: 460px;height: 599px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/forecast/week/lannion_france_3007609?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">meteoblue</a></div>
+				
+
+				<div id="titre"><h2>Webcams du Littoral costarmoricain </h2></div>
+				
+				<IMG id="image" name="image" src="http://dashboardtv.kmt.orange.com/webcam.php" width=400 height=400 alt="image">
+
+	</body>			
+
+				
+</html>
